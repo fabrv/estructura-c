@@ -1,19 +1,19 @@
 #include "minunit.h"
 #include <stdio.h>
-#include "point.h"
+#include "area.h"
 
 int tests_run = 0;
 
-static char * test_quad(){
-  struct Point point;
-  point.x = 100;
-  point.y = 100;
-  mu_assert("Must be quadrant 1", quadrant(point)==1);
+static char * test_area(){
+  struct Square square;
+  square.height = 80;
+  square.width = 26;
+  mu_assert("Must be 2080", area(square)==2080);
   return 0;
 }
 
 static char * all_tests() {
-    mu_run_test(test_quad);
+    mu_run_test(test_area);
     return 0;
 }
 

@@ -5,18 +5,6 @@ struct Point{
 };
 int quadrant();
 
-int main(){
-  struct Point point;
-  printf("X: ");
-  scanf("%d", &point.x);  
-  printf("Y: ");
-  scanf("%d", &point.y);
-
-  printf("Cuadrante %d", quadrant(point));
-
-  return 0;
-}
-
 int quadrant(struct Point point){
   if (point.x == 0 || point.y == 0){
     return 0;
