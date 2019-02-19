@@ -1,4 +1,4 @@
-#include "minunit.h"
+#include "../minunit.h"
 #include <stdio.h>
 #include "point.h"
 
